@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Una carta para ti.</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Hola Mi amor...</strong>
+                        <p>
+                            Solo quería decirte cuánto disfruto pasar tiempo contigo. Eres lo mejor que me ha pasado y me encanta cada momento en el que estamos juntos. Perdon si a veces no parece que me importas, eso nunca va a ser verdad. Eres lo más importante para mí🩷
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+            <audio id="myAudio" src="sound/taylor swift - how you get the girl (taylors version) (traducida al español + lyrics) (mp3cut.net).mp3" type="audio/mp3"></audio>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        const heart = document.querySelector('.heart');
+        const audio = document.getElementById('myAudio');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+            audio.play();
+        });
+    </script>
+</body>
+</html>
